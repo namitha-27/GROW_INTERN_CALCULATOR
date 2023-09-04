@@ -1,0 +1,45 @@
+
+h1 {  
+    text-align: center;  
+    padding: 23px;  
+    background-color: skyblue;  
+    color: black;  
+    }
+
+#formstyle {
+    width: 589px;
+    height: 589px;
+    margin: auto;
+    border: 3px solid red;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: skyblue;
+}
+
+#calc {
+    width: 512px;  
+border: 5px solid black;  
+    border-radius: 3px;  
+    padding: 20px;  
+    margin: auto;  
+}
+
+
+input {
+    width: 100px;
+    background-color: green;
+    color: black;
+    border: 3px solid gray;
+    border-radius: 5px;
+    padding: 26px;
+    margin: 5px;
+    font-size: 15px;
+}
+ .btn2{
+    width: 100px;
+    background-color: rgb(115, 175, 25);
+    /* border: 2px solid black; */
+}
+.btn3{
+    background-color: red;
+}

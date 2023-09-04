@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+    <script src="calculator.js" defer></script>
+</head>
+
+<body>
+    <h1> Calculator Program  </h1>
+    <div id="formstyle">
+        <form name="form" class="form">
+            <input id="calc" type="text" name="answer">
+            <br><br>
+            <input type="button" class="btn" value="1" onclick="calc.value+='1'">
+            <input type="button" class="btn" value="2" onclick="calc.value+='2'">
+            <input type="button" class="btn" value="3" onclick="form.answer.value+='3'">
+            <input type="button" class="btn" value="+" onclick="form.answer.value+='+'">
+            <input type="button" class="btn2" value="exp"  onclick="form.answer.value=Math.exp(form.answer.value)">
+            <br>
+            <input type="button" class="btn" value="4" onclick="form.answer.value+='4'">
+            <input type="button" class="btn" value="5" onclick="form.answer.value+='5'">
+            <input type="button" class="btn" value="6" onclick="form.answer.value+='6'">
+            <input type="button" class="btn" value="-" onclick="form.answer.value+='-'">
+            <input type="button" class="btn2" value="log"  onclick="form.answer.value=Math.log(form.answer.value)">
+            <br>
+            <input type="button" class="btn" value="7" onclick="form.answer.value+='7'">
+            <input type="button" class="btn" value="8" onclick="form.answer.value+='8'">
+            <input type="button" class="btn" value="9" onclick="form.answer.value+='9'">
+            <input type="button" class="btn" value="*" onclick="form.answer.value+='*'">
+            <input type="button" class="btn2" value="deg->rad" onclick="form.answer.value=degrees_to_radians(form.answer.value)">
+            <br>
+            <input type="button" class="btn" value="/" onclick="form.answer.value+='/'">
+            <input type="button" class="btn" value="0" onclick="form.answer.value+='0'">
+            <input type="button" class="btn" value="." onclick="form.answer.value+='.'">
+            <input type="button" class="btn" value="=" onclick="form.answer.value = eval(form.answer.value)">
+            <input type="button" class="btn2" value="rad->deg" onclick="form.answer.value=radians_to_degrees(form.answer.value)">
+            <br>
+            <input type="button" class="btn2" value="sin" onclick="form.answer.value=Math.sin(form.answer.value)">
+            <input type="button" class="btn2" value="cos"  onclick="form.answer.value=Math.cos(form.answer.value)">
+            <input type="button" class="btn2" value="tan"  onclick="form.answer.value=Math.tan(form.answer.value)" >
+            <input type="button" id="theme" class="btn2" value="Theme" onclick="theme()" >
+            <input type="button" class="btn2" value="History">
+            <br>
+            <input type="button" class="btn3" value="Reset" onclick="form.answer.value=''">
+            
+        </form>
+    </div>
+    
+</body>
+
+</html>
